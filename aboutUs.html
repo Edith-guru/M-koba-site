@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M-koba checkout</title>
+    <title>M-koba</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
@@ -13,6 +13,7 @@
 
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -20,7 +21,6 @@
     <!-- NAVIGATION -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
         <div class="container">
-            <!--<img src="img/logo1.png" alt="">-->
             <h1><a href="index.html" class="logo">M-koba.</a></h1>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span><i id="bar" class="fas fa-bars"></i></span>
@@ -38,123 +38,38 @@
                         <a class="nav-link" href="blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="aboutUs.html">About Us</a>
+                        <a class="nav-link active" href="aboutUs.html">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#footer">Contact Us</a>
                     </li>
+                    
                     <li class="nav-item">
                         <i class="fal fa-search"></i>
-                        <i class="fal fa-shopping-bag active"></i>
+                        <i onclick="window.location.href='cart.html';" class="fal fa-shopping-bag"></i>
                     </li>
 
             </div>
         </div>
     </nav>
-
-    <section id="cart" class="container pt-5">
-        <h2 class="font-weight-bold pt-5 mt-5">Shopping Cart</h2>
-        <hr>
-    </section>
-
-    <section id="cart-container" class="container my-5">
-        <table width="100%">
-            <thead>
-                <tr>
-                    <td>Remove</td>
-                    <td>Image</td>
-                    <td>Product</td>
-                    <td>Price</td>
-                    <td>Quantity</td>
-                    <td>Total</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><a href="#0"><i class="fas fa-trash-alt"></i></a></td>
-                    <td><img src="img/shoes/1.jpg" alt=""></td>
-                    <td>
-                        <h5>Shoe Fringilla</h5>
-                    </td>
-                    <td>
-                        <h5>Ksh 4300</h5>
-                    </td>
-                    <td><input class="w-25 pl-1" type="number" value="1"></td>
-                    <td>
-                        <h5>Ksh 4300.00 </h5>
-                    </td>
-                </tr>
-                <tr>
-                    <td><a href="#0"><i class="fas fa-trash-alt"></i></a></td>
-                    <td><img src="img/shoes/2.jpg" alt=""></td>
-                    <td>
-                        <h5>Shoe Fringilla</h5>
-                    </td>
-                    <td>
-                        <h5>ksh 3000</h5>
-                    </td>
-                    <td><input class="w-25 pl-1" type="number" value="1"></td>
-                    <td>
-                        <h5>Ksh 3000.00 </h5>
-                    </td>
-                </tr>
-                <tr>
-                    <td><a href="#0"><i class="fas fa-trash-alt"></i></a></td>
-                    <td><img src="img/shoes/3.jpg" alt=""></td>
-                    <td>
-                        <h5>Shoe Fringilla</h5>
-                    </td>
-                    <td>
-                        <h5>ksh 3000</h5>
-                    </td>
-                    <td><input class="w-25 pl-1" type="number" value="1"></td>
-                    <td>
-                        <h5>Ksh 3000.00 </h5>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <section id="cart-bottom" class="container">
-        <div class="row">
-            <div class="coupon col-lg-6 col-md-6 col-12 mb-4">
-                <div>
-                    <h5>COUPON</h5>
-                    <p>Enter your coupon code if you have one. </p>
-                    <input type="text" placeholder="Coupon Code">
-                    <button>APPLY COUPON</button>
-                </div>
-            </div>
-            <div class="total col-lg-6 col-md-6 col-12">
-                <div>
-                    <h5>CART TOTAL</h5>
-                    <div class="d-flex justify-content-between">
-                        <h6>Subtotal</h6>
-                        <p>Ksh 10300.00 </p>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <h6>Shipping</h6>
-                        <p>Ksh 350.00</p>
-                    </div>
-                    <hr class="second-hr">
-                    <div class="d-flex justify-content-between">
-                        <h6>Total</h6>
-                        <p>Ksh 10650.00 </p>
-                    </div>
-                    <button class="ml-auto">PROCEED TO CHECKOUT</button>
-                </div>
-
-            </div>
+<!--Edith Nekesa-->
+    <section id="about"></section>
+    <section id="featured" class="my-5 py-5">
+        <div class="container mt-5 py-5">
+            <h2 class="font-weight-bold">About Us</h2>
+            <hr>
+            <p>M-koba is an ethical lifestyle brand housing leather goods, african cultured printed, sustainable clothing and cultural travel experiences as curators of the modern day African community. Unique, Vibrant and full of culture. </p>
+            <p>Our bags can only be as good as the materials we use, but where they come from is just as important as their quality. By using Kenyan materials whenever we can, not only do we support our economy, we also reduce our impact on the environment. It’s also why we promote the people who make them. Looking for textiles? Visit Thika Cloth Mills. On the hunt for leather? Talk to Alpharama, a tannery with one of the highest environmental accreditations in sub-Saharan Africa. If you’d like their details or to know more about any of our materials, just get in touch.</p>
+            <p><b>Made for Us by Us.</b></p>
         </div>
-    </section>
+   </section>
 
 <!--Footer section-->
 <section class="footer" id="footer"></section>
     <footer class="mt-5 py-5">
         <div class="row container mx-auto pt-5">
             <div class="footer-one col-lg-3 col-md-6 col-12">
-                <h1><a href="index.html" class="logo">M-koba.</a></h1>
+                <h1 class="logo">M-koba.</h1>
                 <p class="pt-3">M-koba is an ethical lifestyle brand housing leather goods, african cultured printed, sustainable clothing and cultural travel experiences as curators of the modern day African community.<b> Made by Us for Us.</b></p>
             </div>
             <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
@@ -166,8 +81,8 @@
                     <li><a href="#">girls</a></li>
                     <li><a href="#">new arrivals</a></li>
                     <li><a href="#">shoes</a></li>
+
                 </ul>
-                <!--Edith Nekesa-->
             </div>
             <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
                 <h5 class="pb-2">Contact Us</h5>
@@ -214,6 +129,7 @@
             </div>
         </div>
     </footer>
+
 
 
 
